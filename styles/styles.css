@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1024px;
+}
+
+body {
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+.todo__list {
+  position: relative;
+  list-style: none;
+}
+
+.todo__element {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  transition: top .3s;
+}
+
+.todo__element_placeholder {
+  height: 1rem;
+}
+
+.todo__element_move {
+  position: absolute;
+  padding-top: .5rem;
+}
+
+.todo__status {
+  display: flex;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid #666;
+  margin-right: 1rem;
+}
+
+.todo__element_checked .todo__status {
+  background: url('../assets/img/svg/ico-check.svg') center/.8rem no-repeat;
+  background-color: #1bd115;
+}
